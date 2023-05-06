@@ -10,3 +10,8 @@ C:\Users\Minh\VB2 CNTT\PP Lap trinh huong doi tuong\OOP_QuanLyCuaHang\Services\o
 C:\Users\Minh\VB2 CNTT\PP Lap trinh huong doi tuong\OOP_QuanLyCuaHang\Services\obj\Debug\net5.0\refint\Services.dll
 C:\Users\Minh\VB2 CNTT\PP Lap trinh huong doi tuong\OOP_QuanLyCuaHang\Services\obj\Debug\net5.0\Services.pdb
 C:\Users\Minh\VB2 CNTT\PP Lap trinh huong doi tuong\OOP_QuanLyCuaHang\Services\obj\Debug\net5.0\ref\Services.dll
+C:\Users\Minh\VB2 CNTT\PP Lap trinh huong doi tuong\OOP_QuanLyCuaHang\Services\bin\Debug\net5.0\Entities.dll
+C:\Users\Minh\VB2 CNTT\PP Lap trinh huong doi tuong\OOP_QuanLyCuaHang\Services\bin\Debug\net5.0\Entities.pdb
+C:\Users\Minh\VB2 CNTT\PP Lap trinh huong doi tuong\OOP_QuanLyCuaHang\Services\obj\Debug\net5.0\Services.csproj.CopyComplete
+C:\Users\Minh\VB2 CNTT\PP Lap trinh huong doi tuong\OOP_QuanLyCuaHang\Services\bin\Debug\net5.0\DAL.dll
+C:\Users\Minh\VB2 CNTT\PP Lap trinh huong doi tuong\OOP_QuanLyCuaHang\Services\bin\Debug\net5.0\DAL.pdb

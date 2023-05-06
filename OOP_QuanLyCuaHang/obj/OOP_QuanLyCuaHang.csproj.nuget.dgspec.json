@@ -34,9 +34,6 @@
             "projectReferences": {
               "C:\\Users\\Minh\\VB2 CNTT\\PP Lap trinh huong doi tuong\\OOP_QuanLyCuaHang\\Entities\\Entities.csproj": {
                 "projectPath": "C:\\Users\\Minh\\VB2 CNTT\\PP Lap trinh huong doi tuong\\OOP_QuanLyCuaHang\\Entities\\Entities.csproj"
-              },
-              "C:\\Users\\Minh\\VB2 CNTT\\PP Lap trinh huong doi tuong\\OOP_QuanLyCuaHang\\Services\\Services.csproj": {
-                "projectPath": "C:\\Users\\Minh\\VB2 CNTT\\PP Lap trinh huong doi tuong\\OOP_QuanLyCuaHang\\Services\\Services.csproj"
               }
             }
           }
@@ -50,6 +47,16 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Newtonsoft.Json.Bson": {
+              "target": "Package",
+              "version": "[1.0.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -96,11 +103,7 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {
-              "C:\\Users\\Minh\\VB2 CNTT\\PP Lap trinh huong doi tuong\\OOP_QuanLyCuaHang\\Services\\Services.csproj": {
-                "projectPath": "C:\\Users\\Minh\\VB2 CNTT\\PP Lap trinh huong doi tuong\\OOP_QuanLyCuaHang\\Services\\Services.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -235,7 +238,14 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Minh\\VB2 CNTT\\PP Lap trinh huong doi tuong\\OOP_QuanLyCuaHang\\DAL\\DAL.csproj": {
+                "projectPath": "C:\\Users\\Minh\\VB2 CNTT\\PP Lap trinh huong doi tuong\\OOP_QuanLyCuaHang\\DAL\\DAL.csproj"
+              },
+              "C:\\Users\\Minh\\VB2 CNTT\\PP Lap trinh huong doi tuong\\OOP_QuanLyCuaHang\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\Minh\\VB2 CNTT\\PP Lap trinh huong doi tuong\\OOP_QuanLyCuaHang\\Entities\\Entities.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

@@ -2,9 +2,7 @@ C:\Users\Minh\VB2 CNTT\PP Lap trinh huong doi tuong\OOP_QuanLyCuaHang\DAL\bin\De
 C:\Users\Minh\VB2 CNTT\PP Lap trinh huong doi tuong\OOP_QuanLyCuaHang\DAL\bin\Debug\net5.0\DAL.dll
 C:\Users\Minh\VB2 CNTT\PP Lap trinh huong doi tuong\OOP_QuanLyCuaHang\DAL\bin\Debug\net5.0\DAL.pdb
 C:\Users\Minh\VB2 CNTT\PP Lap trinh huong doi tuong\OOP_QuanLyCuaHang\DAL\bin\Debug\net5.0\Entities.dll
-C:\Users\Minh\VB2 CNTT\PP Lap trinh huong doi tuong\OOP_QuanLyCuaHang\DAL\bin\Debug\net5.0\Services.dll
 C:\Users\Minh\VB2 CNTT\PP Lap trinh huong doi tuong\OOP_QuanLyCuaHang\DAL\bin\Debug\net5.0\Entities.pdb
-C:\Users\Minh\VB2 CNTT\PP Lap trinh huong doi tuong\OOP_QuanLyCuaHang\DAL\bin\Debug\net5.0\Services.pdb
 C:\Users\Minh\VB2 CNTT\PP Lap trinh huong doi tuong\OOP_QuanLyCuaHang\DAL\obj\Debug\net5.0\DAL.csproj.AssemblyReference.cache
 C:\Users\Minh\VB2 CNTT\PP Lap trinh huong doi tuong\OOP_QuanLyCuaHang\DAL\obj\Debug\net5.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Minh\VB2 CNTT\PP Lap trinh huong doi tuong\OOP_QuanLyCuaHang\DAL\obj\Debug\net5.0\DAL.AssemblyInfoInputs.cache
