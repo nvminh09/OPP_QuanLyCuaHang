@@ -1,4 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Entities
 {
@@ -14,15 +18,16 @@ namespace Entities
         public HangHoa()
         {
         }
-        public HangHoa(string ma, string ten, string loai,
-                        int han, string cty, int nam, int gia)
+        public HangHoa(string ma, string ten, string loai, int han, 
+                        string cty, int nam, int gia)
         {
-            if (string.IsNullOrWhiteSpace(ma) || string.IsNullOrWhiteSpace(ten) ||
-                string.IsNullOrWhiteSpace(loai) || string.IsNullOrWhiteSpace(cty) ||
+            if (string.IsNullOrEmpty(ma) || string.IsNullOrEmpty(ten) ||
+                string.IsNullOrEmpty(loai) || string.IsNullOrEmpty(cty) ||
                 han <= 0 || nam < 0 || gia < 0)
             {
                 throw new Exception("Hang hoa da nhap khong hop le.");
             }
+
             MaHang = ma;
             TenHang = ten;
             LoaiHang = loai;

@@ -7,7 +7,7 @@ using Entities;
 
 namespace Services
 {
-    public class ServiceResult<T> // Kỹ thuật Generic
+    public class ServiceResult<T> 
     {
         public bool IsSuccess { get; set; }
         public T Data { get; set; }

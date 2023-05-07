@@ -3,7 +3,7 @@
 
 <form method="POST">
     <label for="fname">Từ khóa:</label><br>
-    <input type="text" name="tukhoa" value=" "><br>
+    <input type="text" name="tukhoa" value=""><br>
     <input type="submit" value="Tìm hàng hóa">
     <a class="btn btn-primary" href="/MH_ThemHangHoa">Thêm hàng hóa</a>
 </form>
@@ -17,7 +17,7 @@
         <th> Năm sản xuất</th>
         <th> Giá bán </th>
      </tr>
-     @foreach (var hh in Model.DanhSachHangHoa)
+    @foreach (var hh in Model.DanhSachHangHoa)
     {
     <tr>
         <td>@hh.MaHang</td>
@@ -28,8 +28,8 @@
         <td>@hh.NamSanXuat</td>
         <td>@hh.GiaBan</td>    
         <td>
-            <a href="/MH_SuaHangHoa?masp=@hh.MaHang">Sửa</a>
-            <a href="/MH_XoaHangHoa?masp=@hh.MaHang">Xóa</a>
+            <a href="/MH_SuaHangHoa?mahh=@hh.MaHang">Sửa</a>
+            <a href="/MH_XoaHangHoa?mahh=@hh.MaHang">Xóa</a>
         </td>
     </tr>
     }

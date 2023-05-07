@@ -41,6 +41,10 @@ namespace DAL
                 if (hh.MaHang == hhSua.MaHang)
                 {
                     hh.TenHang = hhSua.TenHang;
+                    hh.LoaiHang = hhSua.LoaiHang;
+                    hh.HanDung = hhSua.HanDung;
+                    hh.CongTy = hhSua.CongTy;
+                    hh.NamSanXuat = hhSua.NamSanXuat;
                     hh.GiaBan = hhSua.GiaBan;
                 }
             }

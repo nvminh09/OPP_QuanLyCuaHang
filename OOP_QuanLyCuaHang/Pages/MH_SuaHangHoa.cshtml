@@ -1,0 +1,24 @@
+﻿@page
+@model OOP_QuanLyCuaHang.Pages.MH_SuaHangHoaModel
+@using Entities
+
+@if(Model.HangHoa != null)
+{
+<form method="POST">
+    <label for="fname">Tên hàng:</label><br>
+    <input type="text" name="ten" value="@Model.HangHoa.TenHang"><br>
+    <label for="fname">Loại hàng:</label><br>
+    <input type="text" name="loai" value="@Model.HangHoa.LoaiHang"><br>
+    <label for="fname">Hạn dùng:</label><br>
+    <input type="text" name="han" value="@Model.HangHoa.HanDung"><br>
+    <label for="fname">Công ty:</label><br>
+    <input type="text" name="congty" value="@Model.HangHoa.CongTy"><br>
+    <label for="fname">Năm sản xuất:</label><br>
+    <input type="text" name="nam" value="@Model.HangHoa.NamSanXuat"><br>
+    <label for="fname">Giá bán:</label><br>
+    <input type="text" name="gia" value="@Model.HangHoa.GiaBan"><br>
+    <input type="submit" value="Luu">
+    </form>
+}
+
+@Model.Chuoi
