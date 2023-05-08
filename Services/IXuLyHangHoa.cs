@@ -13,5 +13,7 @@ namespace Services
         ServiceResult<bool> ThemHangHoa(HangHoa hh);       
         ServiceResult<HangHoa> DocHangHoa(string maHH);
         ServiceResult<bool> SuaHangHoa(HangHoa hh);
+        ServiceResult<bool> XoaHangHoa(string hh);
+
     }
 }

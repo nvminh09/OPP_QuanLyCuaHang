@@ -1,5 +1,6 @@
 ﻿@page
 @model OOP_QuanLyCuaHang.Pages.MH_DanhSachHangHoaModel
+@using Entities;
 
 <form method="POST">
     <label for="fname">Từ khóa:</label><br>
@@ -17,7 +18,7 @@
         <th> Năm sản xuất</th>
         <th> Giá bán </th>
      </tr>
-    @foreach (var hh in Model.DanhSachHangHoa)
+    @foreach (HangHoa hh in Model.DanhSachHangHoa)
     {
     <tr>
         <td>@hh.MaHang</td>

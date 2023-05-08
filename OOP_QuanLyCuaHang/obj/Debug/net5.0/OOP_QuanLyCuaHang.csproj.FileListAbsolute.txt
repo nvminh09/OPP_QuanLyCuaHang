@@ -239,3 +239,4 @@ C:\Users\Minh\VB2 CNTT\PP Lap trinh huong doi tuong\OOP_QuanLyCuaHang\OOP_QuanLy
 C:\Users\Minh\VB2 CNTT\PP Lap trinh huong doi tuong\OOP_QuanLyCuaHang\OOP_QuanLyCuaHang\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
 C:\Users\Minh\VB2 CNTT\PP Lap trinh huong doi tuong\OOP_QuanLyCuaHang\OOP_QuanLyCuaHang\obj\Debug\net5.0\Razor\Pages\MH_ThemHangHoa.cshtml.g.cs
 C:\Users\Minh\VB2 CNTT\PP Lap trinh huong doi tuong\OOP_QuanLyCuaHang\OOP_QuanLyCuaHang\obj\Debug\net5.0\Razor\Pages\MH_SuaHangHoa.cshtml.g.cs
+C:\Users\Minh\VB2 CNTT\PP Lap trinh huong doi tuong\OOP_QuanLyCuaHang\OOP_QuanLyCuaHang\obj\Debug\net5.0\Razor\Pages\MH_XoaHangHoa.cshtml.g.cs

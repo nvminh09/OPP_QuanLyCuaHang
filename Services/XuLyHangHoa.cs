@@ -90,5 +90,17 @@ namespace Services
                 return new List<HangHoa>();
             }
         }
+        public ServiceResult<bool> XoaHangHoa(string hh)
+        {
+            try
+            {
+                luuTruHangHoa.XoaHangHoa(hh);
+                return new ServiceResult<bool>(true, true, string.Empty);
+            }
+            catch (Exception ex)
+            {
+                return new ServiceResult<bool>(false, false, ex.Message);
+            }
+        }
     }
 }
