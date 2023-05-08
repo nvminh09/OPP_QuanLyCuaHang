@@ -87,5 +87,19 @@ namespace DAL
             }
             return null;
         }
+        public bool XoaHangHoa(string MaHH)
+        {
+            List<HangHoa> dshh = DocDanhSachHangHoa();
+            for (int i = 0; i < dshh.Count; i++)
+            {
+                if (dshh[i].MaHang == MaHH)
+                {
+                    dshh.RemoveAt(i);
+                    LuuTruDanhSachHangHoa(dshh);
+                    return true;
+                }
+            }
+            return false;
+        }
     }
 }
