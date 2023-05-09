@@ -1,0 +1,12 @@
+﻿@page
+@model OOP_QuanLyCuaHang.Pages.MH_XoaLoaiHangModel
+
+@if (Model.CoLoaiHang)
+{
+<form method="POST">
+    <div>Bạn chắc chắn muốn xóa loại hàng @Model.HangHoa.TenHang</div>
+    <input type="submit" value="Xoa">
+</form>
+}    
+
+@Model.Chuoi
