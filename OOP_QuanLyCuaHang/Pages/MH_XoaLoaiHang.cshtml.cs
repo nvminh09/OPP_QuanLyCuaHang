@@ -6,11 +6,11 @@ using Services;
 
 namespace OOP_QuanLyCuaHang.Pages
 {
-    public class MH_XoaHangHoaModel : PageModel
+    public class MH_XoaLoaiHangModel : PageModel
     {
         public string Chuoi;
         public HangHoa HangHoa;
-        public bool CoHangHoa;
+        public bool CoLoaiHang;
         [BindProperty(SupportsGet = true)]
         public string MaHH { get; set; }
         [BindProperty]
@@ -29,24 +29,24 @@ namespace OOP_QuanLyCuaHang.Pages
         private IXuLyHangHoa xuLyHangHoa;
         public void OnGet()
         {
-            var hh = xuLyHangHoa.DocHangHoa(MaHH);
-            if (hh != null)
+            var lh = xuLyHangHoa.DocLoaiHang(Loai);
+            if (lh != null)
             {
-                HangHoa = hh.Data;
+                HangHoa = lh.Data;
             }
             else
             {
-                Chuoi = "Khong ton tai thong tin hang hoa";
+                Chuoi = "Khong ton tai thong tin loai hang";
             }
-            CoHangHoa = (hh != null);
+            CoLoaiHang = (lh != null);
         }
         public void OnPost()
         {
-            ServiceResult<bool> kq = xuLyHangHoa.XoaHangHoa(MaHH);
+            ServiceResult<bool> kq = xuLyHangHoa.XoaLoaiHang(Loai);
             Chuoi = $"Ket qua la {kq}";
             Response.Redirect("/MH_DanhSachHangHoa");
         }
-        public MH_XoaHangHoaModel()
+        public MH_XoaLoaiHangModel()
         {
             xuLyHangHoa = new XuLyHangHoa();
         }

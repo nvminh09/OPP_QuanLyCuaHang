@@ -14,6 +14,9 @@ namespace DAL
         HangHoa DocHangHoa(string maHH);
         void SuaHangHoa(HangHoa hh);
         HangHoa TimHangHoaBangTen(string tenHH);
+        HangHoa TimHangHoaBangMa(string maHH);
         bool XoaHangHoa(string MaHH);
+        HangHoa DocLoaiHang(string loaiHang);
+        bool XoaLoaiHang(string loaiHang);
     }
 }

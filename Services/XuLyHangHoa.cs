@@ -15,31 +15,42 @@ namespace Services
         {
             luuTruHangHoa = new LuuTruHangHoa();
         }
-        public ServiceResult<bool> ThemHangHoa(HangHoa hh)
+        public ServiceResult<bool> ThemHangHoa(HangHoa h)
         {
             try
             {
                 // Kiem tra tinh hop le cua du lieu
-                // dam bao ten san pham la duy nhat
-                /*var sp = luuTruSanPham.TimSanPhamBangTen(s.TenSanPham);
-                if (sp != null)
+                // dam bao ma hang hoa la duy nhat
+                var hh = luuTruHangHoa.TimHangHoaBangMa(h.MaHang);
+                /*if (hh != null)
                 {
                     var error = new ServiceError()
                     {
-                        ErrorMessage = "Ton tai san pham trung ten",
+                        ErrorMessage = "Ton tai hang hoa trung ma.",
                         ErrorCode = "DUPLICATED_ERROR"
                     };
                 }*/
-                luuTruHangHoa.LuuHangHoa(hh);
+                if (hh == null)
+                {
+                    luuTruHangHoa.LuuHangHoa(h);
+                }
+                if (hh != null)
+                {
+                    var error = new ServiceError()
+                    {
+                        ErrorMessage = "Ton tai hang hoa trung ma.",
+                        //ErrorCode = "DUPLICATED_ERROR"
+                    };
+                }
                 return new ServiceResult<bool>(true, true, string.Empty);
             }
             catch (Exception ex)
             {
-                /*var error = new ServiceError()
+                var error = new ServiceError()
                 {
                     ErrorMessage = ex.Message,
-                    ErrorCode = "GENERAL_ERROR"
-                };*/
+                    //ErrorCode = "GENERAL_ERROR"
+                };
                 return new ServiceResult<bool>(false, false, ex.Message);
             }
         }
@@ -74,6 +85,25 @@ namespace Services
                 return new ServiceResult<HangHoa>(false, null, ex.Message);
             }
         }
+        public ServiceResult<HangHoa> DocLoaiHang(string loaiHang)
+        {
+            try
+            {
+                var lh = luuTruHangHoa.DocLoaiHang(loaiHang);
+                if (lh != null)
+                {
+                    return new ServiceResult<HangHoa>(true, lh, string.Empty);
+                }
+                else
+                {
+                    return new ServiceResult<HangHoa>(false, null, "Loai hang khong ton tai.");
+                }
+            }
+            catch (Exception ex)
+            {
+                return new ServiceResult<HangHoa>(false, null, ex.Message);
+            }
+        }
         public List<HangHoa> TimKiemHang(string tuKhoa)
         {
             try
@@ -95,6 +125,19 @@ namespace Services
             try
             {
                 luuTruHangHoa.XoaHangHoa(hh);
+                return new ServiceResult<bool>(true, true, string.Empty);
+            }
+            catch (Exception ex)
+            {
+                return new ServiceResult<bool>(false, false, ex.Message);
+            }
+        }
+        
+        public ServiceResult<bool> XoaLoaiHang(string lh)
+        {
+            try
+            {
+                luuTruHangHoa.XoaLoaiHang(lh);
                 return new ServiceResult<bool>(true, true, string.Empty);
             }
             catch (Exception ex)

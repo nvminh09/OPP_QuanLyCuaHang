@@ -75,6 +75,18 @@ namespace DAL
             }
             return null;
         }
+        public HangHoa DocLoaiHang(string loaiHang)
+        {
+            var dshh = DocDanhSachHangHoa();
+            foreach (var hh in dshh)
+            {
+                if (hh.LoaiHang == loaiHang)
+                {
+                    return hh;
+                }
+            }
+            return null;
+        }
         public HangHoa TimHangHoaBangTen(string ten)
         {
             var ds = DocDanhSachHangHoa();
@@ -87,12 +99,38 @@ namespace DAL
             }
             return null;
         }
+        public HangHoa TimHangHoaBangMa(string ma)
+        {
+            var ds = DocDanhSachHangHoa();
+            foreach (var hh in ds)
+            {
+                if (hh.MaHang == ma)
+                {
+                    return hh;
+                }
+            }
+            return null;
+        }
         public bool XoaHangHoa(string MaHH)
         {
             List<HangHoa> dshh = DocDanhSachHangHoa();
             for (int i = 0; i < dshh.Count; i++)
             {
                 if (dshh[i].MaHang == MaHH)
+                {
+                    dshh.RemoveAt(i);
+                    LuuTruDanhSachHangHoa(dshh);
+                    return true;
+                }
+            }
+            return false;
+        }
+        public bool XoaLoaiHang(string loaiHang)
+        {
+            List<HangHoa> dshh = DocDanhSachHangHoa();
+            for (int i = 0; i < dshh.Count; i++)
+            {
+                if (dshh[i].LoaiHang == loaiHang)
                 {
                     dshh.RemoveAt(i);
                     LuuTruDanhSachHangHoa(dshh);
